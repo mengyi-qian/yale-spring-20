@@ -6,6 +6,7 @@ $(document).ready(function(){
   $('div.question').hide();
   $('div.dquote').hide();
   $('div.apostrophe').hide();
+  $('div.dash').hide();
 
 
 
@@ -43,6 +44,11 @@ $(document).ready(function(){
   });
 
   $('.ampersand').click(function() {
+    $(this).css("color", "black");
+  });
+
+  $('.dash').click(function() {
+    $(this).next(".dash").show("slow");
     $(this).css("color", "black");
   });
 
