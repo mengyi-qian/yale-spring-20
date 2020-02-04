@@ -13,8 +13,8 @@ div.content {
 
 .pp {
   font-size: 41pt;
-  font-family: 'Source Code Pro', monospace;
-  /* font-family: 'Cutive Mono', monospace; */
+  /* font-family: 'Source Code Pro', monospace; */
+  font-family: 'Cutive Mono', monospace;
   letter-spacing: 15px;
   margin-right: 50px;
   text-align: justify;
