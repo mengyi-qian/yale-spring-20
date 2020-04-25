@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- this is the name that will appear on the tab in your browser -->
+    <title>Virtual Still Life Generator</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" src="icon.png">
+    <style media="screen">
+      body {
+        margin: 0;
+        outline: 0;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      #container-1 {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        left: 60px;
+        top: 60px;
+        width: 500px;
+        align-items: center;
+        align-content: center;
+      }
+      video {
+        margin: 0;
+        border: 1px ridge LightGrey;
+        box-shadow: 0px 0px 15px 3px LightGrey;
+        border-radius: 3px;
+      }
+      #container-1 img {
+        width: 48px;
+        padding: 12px;
+      }
+      #container-2 {
+        position: absolute;
+        display: inline-flex;
+        flex-wrap: wrap;
+        left: 640px;
+        top: 40px;
+        align-items: center;
+        align-content: center;
+      }
+      #container-2 img {
+        display: inline-flex;
+        margin: 0px;
+        max-width: 300px;
+      }
+      #back {
+        position: fixed;
+        left: 60px;
+        bottom: 40px;
+        color: ForestGreen;
+        font-family: courier, monospace;
+        font-size: 14pt;
+      }
+      #download {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 40px;
+        font-family: "Univers", sans-serif;
+        font-size: 10pt;
+        font-weight: 400;
+        filter: drop-shadow(0px 0px 3px LightGrey);
+        cursor: pointer;
+        padding-right: 12px;
+      }
+      #download:hover {
+        border: 1px dotted black;
+      }
+      #download::selection {
+        background: none;
+        border: 1px dotted black;
+      }
+      span::selection, img::selection, a::selection, br::selection {
+        background: none;
+      }
+
+    </style>
+</head>
+<body>
+  <div id="container-1">
+    <video width="500" height="500" autoplay muted>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+    <a href="VirtualStillLifeGenerator.java" id="download" download>
+      <img src="grflic.ico"><span>VirtualStillLife<br>Generator.java</span>
+    </a>
+  </div>
+  <div id="container-2">
+    <img src="image/01.png">
+    <img src="image/02.png">
+    <img src="image/03.png">
+    <img src="image/04.png">
+    <img src="image/05.png">
+    <img src="image/06.png">
+    <img src="image/07.png">
+    <img src="image/08.png">
+    <img src="image/09.png">
+    <img src="image/10.png">
+    <img src="image/11.png">
+    <img src="image/12.png">
+    <img src="image/13.png">
+    <img src="image/14.png">
+    <img src="image/15.png">
+    <img src="image/16.png">
+    <img src="image/17.png">
+  </div>
+  <div id="about"></div>
+  <a id="back" href="../index.html">[back]</a>
+
+</body>
+</html>

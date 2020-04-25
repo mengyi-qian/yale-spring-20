@@ -15,7 +15,7 @@
  */
 let overFlow = false;
 const beginDay = 1;
-const lastDay = 2;
+const lastDay = 3;
 const beginDate = $(".A").find("p").html();
 
 /**
@@ -114,7 +114,7 @@ $(document).ready(function(){
       // update the background image
       $(ptr).css(
         "background-image",
-        $(ptr).css("background-image").replace(currentDay, nextDay)
+        $(ptr).css("background-image").replace(`day-${currentDay}`, `day-${nextDay}`)
       );
 
       // update the date
@@ -127,4 +127,3 @@ $(document).ready(function(){
     });
   }
 });
-
