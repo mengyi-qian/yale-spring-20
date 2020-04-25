@@ -15,7 +15,7 @@
  */
 let overFlow = false;
 const beginDay = 1;
-const lastDay = 4;
+const lastDay = 6;
 const beginDate = $(".A").find("p").html();
 
 /**
