@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- this is the name that will appear on the tab in your browser -->
+    <title>Mengyi Qian</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/void.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <style media="screen">
+      * {
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        list-style: none;
+        font-family: courier, monospace;
+        font-size: 14pt;
+        line-height: 1.5em;
+        color: ForestGreen;
+      }
+      ul {
+        list-style: none;
+        margin: 20px 50px;
+      }
+      @font-face {
+        font-family: LL BradfordMono Regular Web;
+        font-style: normal;
+        font-weight: 400;
+        src: url(assets/BradfordMonoLLWeb-Regular.woff2) format("woff2"), url(assets/BradfordMonoLLWeb-Regular.woff) format("woff")
+      }
+      pre {
+        cursor: default;
+      }
+      #p1, #p2, #p3, #p4, #kiosk {
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color: ForestGreen;
+      }
+
+    </style>
+</head>
+
+
+<body>
+  <ul>
+    <li><pre>* * * * * * * * * * * * * * * * * * *</pre></li>
+    <li><pre>*   Mengyi Qian                     *</pre></li>
+    <li><pre>*                                   *</pre></li>
+    <li><a href="void/void.html"><pre id="p1">*   p1 -----> void                  *</pre></a></li>
+    <li><a href="trail/trail.html"><pre id="p2">*   p2 -----> trail                 *</pre></a></li>
+    <li><a href="packet/packet.html"><pre id="p3">*   p3 -----> packet(in progress)   *</pre></a></li>
+    <li><a href="site/site.html"><pre id="p4">*   p4 -----> site(in progress)     *</pre></a></li>
+    <li><pre>*                                   *</pre></li>
+    <li><a href="kiosk/index.html"><pre id="kiosk">*   kiosk (with Minhwan & Anna)     *</pre></a></li>
+    <li><pre>* * * * * * * * * * * * * * * * * * *</pre></li>
+  </ul>
+
+  <script src="assets/jquery.min.js"></script>
+  <script>
+    $( "#p1" ).hover(
+      function() {
+        $(this).html("*   * * * * * * * * *               *");
+      }, function() {
+        $(this).html("*   p1 -----> void                  *");
+      }
+    );
+    $( "#p2" ).hover(
+      function() {
+        $(this).html("*   * * * * * * * * * *             *");
+      }, function() {
+        $(this).html("*   p2 -----> trail                 *");
+      }
+    );
+    $( "#p3" ).hover(
+      function() {
+        $(this).html("*   * * * * * * * * * * * * * * *   *");
+      }, function() {
+        $(this).html("*   p3 -----> packet(in progress)   *");
+      }
+    );
+    $( "#p4" ).hover(
+      function() {
+        $(this).html("*   * * * * * * * * * * * * * *     *");
+      }, function() {
+        $(this).html("*   p4 -----> site(in progress)     *");
+      }
+    );
+    $( "#kiosk" ).hover(
+      function() {
+        $(this).html("*   * * * * * * * * * * * * * *     *");
+      }, function() {
+        $(this).html("*   kiosk (with Minhwan & Anna)     *");
+      }
+    );
+
+
+  </script>
+
+
+  <!-- <script src="assets/script.js"></script> -->
+
+</body>
+</html>
