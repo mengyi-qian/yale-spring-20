@@ -94,3 +94,11 @@
         background-position: center;
         background-size: cover;
       } */
+      #back {
+        position: fixed;
+        left: 60px;
+        bottom: 40px;
+        color: ForestGreen;
+        font-family: courier, monospace;
+        font-size: 14pt;
+      }
