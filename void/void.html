@@ -16,7 +16,6 @@
       word-break: break-all;
       line-height: 48pt;
     }
-
     .text {
       font-size: 41pt;
       /* font-family: 'Source Code Pro', monospace; */
@@ -26,7 +25,6 @@
       text-align: justify;
       position: absolute;
     }
-
     a {
       position: fixed;
       left: 60px;
@@ -36,7 +34,6 @@
       font-family: courier, monospace;
       font-size: 14pt;
     }
-
     </style>
 </head>
 
@@ -49,7 +46,22 @@
   <a id="back" href="../index.html">[back]</a>
 
   <script src="../assets/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('span').hide();
+    $('.text').hover(
+      function() {
+      $('span').show();
+      $('.text').css("word-break", "normal");
+      $('.text').css("letter-spacing", "4px");
+    }, function() {
+      $('span').hide();
+      $('.text').css("word-break", "break-all");
+      $('.text').css("letter-spacing", "15px");
+    }
+    );
+  });
+  </script>
 
 </body>
 </html>
